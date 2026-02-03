@@ -8,5 +8,11 @@ void main() {
 
       expect(resultado, isTrue);
     });
+
+    test('retorna false cuando el número no es capicúa', () {
+      final resultado = CapicuaUtils.esCapicua('12345');
+
+      expect(resultado, isFalse);
+    });
   });
 }
